@@ -10,7 +10,7 @@ long long int modulo(int x,int n, int M){
 		return (y*y)%M;
 	}
 	else if(n%2==1){
-		return (x%M)*modulo(x,n-1,M);
+		return ((x%M)*modulo(x,n-1,M))%M;
 	} 
 }
 
